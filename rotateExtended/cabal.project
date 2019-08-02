@@ -1,0 +1,6 @@
+packages: rotate/
+          rotatePlugin/
+
+package rotate
+package rotatePlugin
+
