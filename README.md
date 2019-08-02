@@ -1,4 +1,4 @@
-explanation from the chat log;
+explanation from the chat log;   
 12:40:38 <fog> the original version had rotate.hsig implemented by the backpacks LinearRotate and VectRotate   
 12:41:32 <fog> then, there is another new signature rotatePlugin.hsig which imports rotate (and so needs mixins of it.?) and implementations of this LinearRotatePlugina and VectRotatePlugin   
 12:42:42 <fog> this also use Rotate... but specific implementations of it, so almost tempted not to import Rotate at all but directly import LinearRotate and not use mixins for that   
