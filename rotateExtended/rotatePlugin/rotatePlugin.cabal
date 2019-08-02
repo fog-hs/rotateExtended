@@ -30,6 +30,13 @@ executable rotatePluginUse
   hs-source-dirs: rotatePluginUse
   main-is: Main.hs
   build-depends: base,linear,vect,rotate,rotatePlugin,rotatePluginBackpack
+  
+  mixins: rotatePlugin (TestRotatePlugin as Linear.TestRotatePlugin) requires (RotatePlugin as LinearRotatePlugin2)
+  mixins: rotatePlugin (TestRotatePlugin as Vect.TestRotatePlugin  ) requires (RotatePlugin as VectRotatePlugin2  )
+  mixins: rotatePluginBackpack (LinearRotatePlugin as LinearRotatePlugin2) requires (Rotate as LinearRotate)
+  mixins: rotatePluginBackpack (VectRotatePlugin   as VectRotatePlugin2)   requires (Rotate as VectRotate  )
+
+
 
  
 	
